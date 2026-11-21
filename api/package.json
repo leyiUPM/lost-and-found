@@ -1,9 +1,17 @@
 {
-  "name": "campus-return-api",
+  "name": "lost-and-found-api",
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "scripts": { "start": "node server.js", "test": "node --test" },
-  "engines": { "node": ">=24" },
-  "dependencies": { "express": "^5.1.0", "pg": "^8.16.3" }
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "pg": "^8.16.3"
+  }
 }

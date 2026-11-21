@@ -29,7 +29,7 @@ export function createApp(pool, origin, version = "dev") {
     try { await pool.query("SELECT 1"); res.json({ status: "ready" }); }
     catch { res.status(503).json({ error: "Database unavailable" }); }
   });
-  app.get("/api/message", (req, res) => res.json({ message: "Campus Return API", version }));
+  app.get("/api/message", (req, res) => res.json({ message: "Lost and Found API", version }));
   app.get("/api/items", async (req, res) => {
     const { rows } = await pool.query("SELECT * FROM found_items ORDER BY collected, id DESC");
     res.json(rows);
